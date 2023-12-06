@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallaInicio"
+    android:background="#171718"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/alerta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/alerta_icon"
+            app:tint="#ffd200" />
+
+
+
+
+        <TextView
+            android:layout_marginTop="45dp"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/alerta_icon"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:id="@+id/title1"
+            android:text="Es probable que necesites leer nuestros TÉRMINOS Y CONDICIONES DE USO así como nuestras POLÍTICAS DE PRIVACIDAD.\n\n\
+Una vez que hayas leído esto podrás decidir sobre usar nuestra aplicación o no.\n\nSi continúas en la aplicación después de este enunciado podemos asumir que estás de acuerdo con nuestros lineamientos."
+            />
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:id="@+id/casilla"
+            android:textStyle="bold"
+            android:layout_below="@id/title1"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <Button
+            android:backgroundTint="@color/grisClaro"
+            android:text="Siguiente"
+            android:id="@+id/siguiente"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@id/casilla"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

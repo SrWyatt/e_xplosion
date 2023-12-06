@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start"
+
+
+    >
+
+
+
+    <!-- Linear Layout para centrar los botones en la parte inferior -->
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_centerHorizontal="true"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icon_wht">
+
+    </ImageView>
+
+    <ProgressBar
+        android:id="@+id/circularProgressBar"
+        style="@style/ProgressBarWhite"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="80dp"
+        android:background="@null"
+        android:visibility="gone" />
+
+    <SeekBar
+        android:id="@+id/volumeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearRep"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-30dp"
+        android:max="100"
+        android:progress="50"
+        android:progressTint="@android:color/white"
+        android:splitTrack="false"
+        android:thumbTint="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearRep"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="50dp"
+        android:gravity="center"
+
+        >
+
+
+        <!-- Botón de volumen -->
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/icon_mute"
+            android:visibility="invisible"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            android:src="@drawable/mute_icon" />
+
+        <!-- Botón de reproducción -->
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/playPauseImageView"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            android:onClick="onPlayPauseClick"
+            android:src="@drawable/play_icon" />
+
+
+        <!-- Botón de volumen -->
+        <ImageView
+            android:visibility="invisible"
+            android:clickable="true"
+            android:id="@+id/icon_volume"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:src="@drawable/volume_icon" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </include>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

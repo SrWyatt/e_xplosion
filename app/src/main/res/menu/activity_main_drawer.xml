@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item android:title="MENÚ">
+
+            <menu>
+                <item android:id="@+id/inicio"
+                    android:icon="@drawable/inicio"
+                    android:title="Inicio"
+                    />
+
+                <item android:id="@+id/facebook"
+                    android:icon="@drawable/facebook"
+                    android:title="Facebook"
+                    />
+
+                <item android:id="@+id/instagram"
+                    android:icon="@drawable/instagram"
+                    android:title="Instagram"/>
+
+                <item android:id="@+id/programacion"
+                    android:icon="@drawable/reloj"
+                    android:title="Programación"/>
+
+
+
+            </menu>
+
+        </item>
+
+
+
+    </group>
+
+
+    <item android:id="@+id/e_connect"
+        android:icon="@drawable/econnect"
+        android:title="E-CONNECT"
+        />
+
+
+
+    <item android:title="FAQ">
+
+        <menu>
+
+            <item android:id="@+id/aboutus"
+                android:icon="@drawable/aboutus"
+                android:title="Acerca de..."/>
+
+            <item android:id="@+id/salir"
+                android:icon="@drawable/salir"
+                android:title="Cerrar aplicación"/>
+
+
+
+
+
+
+        </menu>
+
+
+
+    </item>
+
+
+
+
+
+
+
+
+</menu>

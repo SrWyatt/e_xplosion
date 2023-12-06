@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">E-XPLOSION Radio</string>
+    <string name="icecast_url">https://stream.zeno.fm/daq52fzc9kttv</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <!-- res/values/strings.xml -->
+
+
+
+</resources>

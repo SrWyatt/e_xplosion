@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/alerta"
+            android:layout_gravity="center"
+            app:tint="#E5BE01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atención."
+            android:textSize="16sp"
+            android:textColor="#E5BE01"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <View
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Es importante que las notificaciones estén activadas para estar al tanto de nuestras actividades y comunicados.
+\n\nSi deseas activarlo más tarde puedes hacerlo en la opción 'Acerca de...' situado en el menú lateral."
+            android:textColor="@android:color/white"
+            android:paddingBottom="20dp"
+            android:paddingTop="20sp"
+            android:textSize="14sp"
+            android:layout_gravity="center" />
+        <Button
+            android:text="Entendido"
+            android:id="@+id/entendido"
+            android:textAlignment="center"
+            android:backgroundTint="@color/grisClaro"
+            android:layout_width="130dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_height="60dp"
+            android:paddingTop="10dp"
+            >
+        </Button>
+
+    </LinearLayout>
+</FrameLayout>

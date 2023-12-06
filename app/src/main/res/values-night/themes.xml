@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RepRadio" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.RepRadio" parent="Base.Theme.RepRadio" />
+
+    <style name="CustomDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="ProgressBarWhite" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:color">@android:color/white</item>
+
+    </style>
+
+
+</resources>
+
